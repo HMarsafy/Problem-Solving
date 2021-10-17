@@ -1,2 +1,2 @@
 # Problem-Solving
-## This repository contains all my submissions for problems on different Problem solving platforms.
+## This repository contains all my submissions on different Problem solving platforms.
