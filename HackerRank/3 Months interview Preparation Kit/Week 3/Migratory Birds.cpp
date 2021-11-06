@@ -1,4 +1,5 @@
-int migratoryBirds(vector<int> arr) {
+int migratoryBirds(vector<int> arr) 
+{
     unordered_map<int , int > bird_freq;
     for(int i = 0 ; i < arr.size() ; i++)
         {
