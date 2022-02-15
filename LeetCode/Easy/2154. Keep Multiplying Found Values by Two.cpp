@@ -10,3 +10,19 @@
         }
         return out;
     }
+
+///////////////////////////////////////////////////////// ANOTHER SOLUTION //////////////////////////////////////////////////////////////////////////////
+
+int findFinalValue(vector<int>& nums, int original) {
+        int out = original;
+        unordered_map<int,bool> found;
+         for(int i = 0 ; i<nums.size() ; i++)
+         {
+             found[nums[i]] = true;
+         }
+        while(found[out])
+        {
+            out *=2;
+        }
+        return out;
+    }
