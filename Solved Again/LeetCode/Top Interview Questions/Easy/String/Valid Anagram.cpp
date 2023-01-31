@@ -24,3 +24,22 @@ bool isAnagram(string s, string t) {
         }
         return 1;
     }
+/* O(n) */
+   bool isAnagram(string s, string t) {
+        if(s.size() != t.size()) return 0;
+        vector<int> alpha(26,0);
+        for(int i = 0 ; i<s.size() ; i++)
+        {
+            alpha[s[i] - 'a']++;
+        }
+         for(int i = 0 ; i<t.size() ; i++)
+        {
+            alpha[t[i] - 'a']--;
+        }
+        for(int i = 0 ; i <alpha.size() ; i++)
+        {
+            if(alpha[i] != 0) return 0;
+        }
+        return 1;
+                         
+    }
